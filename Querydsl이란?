@@ -1,0 +1,34 @@
+먼저.
+쿼리(Query) 란?
+
+ 쿼리란 데이터베이스에 정보를 요청하는 것이다.
+
+ 쿼리는 웹 서버에 특정한 정보를 보여달라는 웹 클라이언트 요청(주로 문자열을 기반으로 한 요청이다)에 의한 처리이다.
+
+ 쿼리는 대개 데이터베이스로부터 특정한 주제어나 어귀를 찾기 위해 사용된다. 주제어가 검색엔진의 검색필드 내에 입력된 다음, 그 내용이 웹 서버로 넘겨진다.
+
+즉, 더 쉽게 말한다면.
+DB서버가 구동이 되고 있는 환경에서(Oracle, Cubrid, MsServer, MySQL, Tibero, Altibase 등) DB에 대해 명령문을 작업하게 되는데 이 때의 명령문을 쿼리(Query)라고 생각하면 된다.
+
+
+
+여기서 querydsl 은 무엇인가.
+
+Querydsl은 오픈 소스 프로젝트이고 type-safe한 쿼리를 위한 Domain Specific Language이다.
+
+
+
+
+SQL은 문자이다.
+
+이는 type-check가 불가능하고 실행해 보기 전까지 작동여부 확인이 어렵다.
+
+만약 SQL이 class처럼 Type이 있고, Java코드로 작성할 수 있다면 좋지 않을까?
+
+SQL을 java로 type-safe하게 개발 할 수 있게 해주는 프레임워크가 Querydsl이다.
+
+QueryDSL은 JPQL(HQL)을 type-safe하게 작성하기 위해서 만들어졌고 아래와 같이 동작한다.
+
+
+
+Querydsl -> JPQL -> SQL
